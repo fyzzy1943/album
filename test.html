@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo album - test</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+        <h1>Photo album</h1>
+      </a>
+    </header>
+    
+    <!--
+      Breadcrumbs of parent albums
+    -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a class="breadcrumb-item" href="test.html">test</a>
+      </nav>
+    
+    <!--
+      Nested albums
+    -->
+    <ul id="galleries">
+    </ul>
+    
+    <!--
+      Render all thumbnails
+    -->
+    <ul id="media">
+        
+          <li data-src="media/large/test/vlyovyshzshvlyovyshzsh.jpeg"
+              data-sub-html=""
+              data-download-url="media/large/test/vlyovyshzshvlyovyshzsh.jpeg"
+              
+              data-filename="vlyovyshzshvlyovyshzsh.jpeg"
+        
+            >
+            <a href="media/large/test/vlyovyshzshvlyovyshzsh.jpeg">
+              <img src="media/thumbs/test/vlyovyshzshvlyovyshzsh.jpeg"
+                   width="120"
+                   height="120"
+                   alt="vlyovyshzshvlyovyshzsh.jpeg" />
+            </a>
+          </li>    
+          <li data-src="media/large/test/xwom4qikfguxwom4qikfgu.jpeg"
+              data-sub-html=""
+              data-download-url="media/large/test/xwom4qikfguxwom4qikfgu.jpeg"
+              
+              data-filename="xwom4qikfguxwom4qikfgu.jpeg"
+        
+            >
+            <a href="media/large/test/xwom4qikfguxwom4qikfgu.jpeg">
+              <img src="media/thumbs/test/xwom4qikfguxwom4qikfgu.jpeg"
+                   width="120"
+                   height="120"
+                   alt="xwom4qikfguxwom4qikfgu.jpeg" />
+            </a>
+          </li>    
+          <li data-src="media/large/test/0etpyqm0ct20etpyqm0ct2.jpeg"
+              data-sub-html=""
+              data-download-url="media/large/test/0etpyqm0ct20etpyqm0ct2.jpeg"
+              
+              data-filename="0etpyqm0ct20etpyqm0ct2.jpeg"
+        
+            >
+            <a href="media/large/test/0etpyqm0ct20etpyqm0ct2.jpeg">
+              <img src="media/thumbs/test/0etpyqm0ct20etpyqm0ct2.jpeg"
+                   width="120"
+                   height="120"
+                   alt="0etpyqm0ct20etpyqm0ct2.jpeg" />
+            </a>
+          </li>    
+          <li data-src="media/large/test/n553qcsadhen553qcsadhe.jpeg"
+              data-sub-html=""
+              data-download-url="media/large/test/n553qcsadhen553qcsadhe.jpeg"
+              
+              data-filename="n553qcsadhen553qcsadhe.jpeg"
+        
+            >
+            <a href="media/large/test/n553qcsadhen553qcsadhe.jpeg">
+              <img src="media/thumbs/test/n553qcsadhen553qcsadhe.jpeg"
+                   width="120"
+                   height="120"
+                   alt="n553qcsadhen553qcsadhe.jpeg" />
+            </a>
+          </li></ul>
+    
+    <!--
+      Pagination
+    -->
+    
+    <!--
+      Zip file link
+    -->
+    
+    
+    <!--
+      Optional footer
+    -->
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>

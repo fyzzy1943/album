@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo album - Home</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+        <h1>Photo album</h1>
+      </a>
+    </header>
+    
+    <!--
+      Breadcrumbs of parent albums
+    -->
+    
+    <!--
+      Nested albums
+    -->
+    <ul id="galleries">
+     <li>
+       <a href="test.html">
+         <h3>test</h3>
+         <div class="meta">
+           4 photos<br />
+           15 Jul 2022 - 15 Jul 2022
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/test/vlyovyshzshvlyovyshzsh.jpeg" /></li><li><img src="media/thumbs/test/xwom4qikfguxwom4qikfgu.jpeg" /></li><li><img src="media/thumbs/test/0etpyqm0ct20etpyqm0ct2.jpeg" /></li><li><img src="media/thumbs/test/n553qcsadhen553qcsadhe.jpeg" /></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="beer.html">
+         <h3>beer</h3>
+         <div class="meta">
+           3 photos<br />
+           16 Jul 2022 - 16 Jul 2022
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/beer/Bier_Shooting_1.jpg" /></li><li><img src="media/thumbs/beer/Bier_Shooting_2.jpg" /></li><li><img src="media/thumbs/beer/Bier_Shooting_3.jpg" /></li><li><img src="public/missing.png" /></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="animal.html">
+         <h3>animal</h3>
+         <div class="meta">
+           10 photos<br />
+           16 Jul 2022 - 16 Jul 2022
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/animal/Katze_(gefleckt)_1.jpg" /></li><li><img src="media/thumbs/animal/Katze_(gefleckt)_2.jpg" /></li><li><img src="media/thumbs/animal/Katze_(gefleckt)_3.jpg" /></li><li><img src="media/thumbs/animal/Katze_(grau)_1.jpg" /></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="natural.html">
+         <h3>natural</h3>
+         <div class="meta">
+           3 photos<br />
+           16 Jul 2022 - 16 Jul 2022
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/natural/Wald_1.jpg" /></li><li><img src="media/thumbs/natural/Wald_2.jpg" /></li><li><img src="media/thumbs/natural/Wald_3.jpg" /></li><li><img src="public/missing.png" /></li>     </ul>
+       </a>
+     </li>
+    </ul>
+    
+    <!--
+      Render all thumbnails
+    -->
+    <ul id="media">
+    </ul>
+    
+    <!--
+      Pagination
+    -->
+    
+    <!--
+      Zip file link
+    -->
+    
+    
+    <!--
+      Optional footer
+    -->
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
